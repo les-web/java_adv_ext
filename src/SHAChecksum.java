@@ -6,9 +6,10 @@ public class SHAChecksum {
     public static void main(String[] args) throws NoSuchAlgorithmException {
         if (args.length != 1) {
             System.out.println("Podaj ciąg znaków do obliczenia funkcji skrótu.");
-            return;
+   //         return;
         }
         MessageDigest md = MessageDigest.getInstance("SHA-256");
+        System.out.println(md);
         byte[] mdbytes = md.digest(args[0].getBytes());
         StringBuffer hexBuffer = new StringBuffer();
         String hex;
