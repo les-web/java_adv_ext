@@ -11,6 +11,8 @@ public class SHAChecksum {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         System.out.println(md);
         byte[] mdbytes = md.digest(args[0].getBytes());
+    //    byte[] mdbytes = md.digest(md.getBytes());
+
         StringBuffer hexBuffer = new StringBuffer();
         String hex;
         for (int i = 0; i < mdbytes.length; ++i) {
