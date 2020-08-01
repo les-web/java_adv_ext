@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
 
 // Java program to calculate SHA hash value
 
-class GFG {
+class SHAValue {
     public static byte[] getSHA(String input) throws NoSuchAlgorithmException {
         // Static getInstance method is called with hashing SHA
         MessageDigest md = MessageDigest.getInstance("SHA-256");
